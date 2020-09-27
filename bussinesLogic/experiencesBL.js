@@ -1,6 +1,6 @@
 const ExperiencesModel = require('../models/experiencesModel');
 
-const findAllExperiences = async() => {
+const findAllExperiences = async () => {
     try {
         const experiences = await ExperiencesModel.find();   
         return { experiences }

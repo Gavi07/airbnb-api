@@ -22,10 +22,10 @@ const top5 = async (req, res) => {
     }
 }
     
-const detail = (req, res) => {
+const detail = async (req, res) => {
     const { id } = req.params;
     try {
-        const response = findExperiences(id);
+        const response = await findExperiences(id);
         res.json(response);
     } catch (error) {
         res.send(error).status(404);

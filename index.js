@@ -13,10 +13,10 @@ require('./connection/connectionDb');
 
 // Routes
 const experiencesRoutes = require('./routes/experiences');
-// const bookingRoutes = require('./routes/booking');
+const bookingRoutes = require('./routes/booking');
 
 app.use('/experiences', experiencesRoutes)
-// app.use('/booking', bookingRoutes);
+app.use('/booking', bookingRoutes);
 /*
     - localhost:3001/experiences
     - localhost:3001/experiences/top5

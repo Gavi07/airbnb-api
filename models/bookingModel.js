@@ -9,6 +9,6 @@ const BookingSchema = new Schema({
     experience_id: String
 });
 
-const BookingModel = mongoose.model('booking', BookingSchema);
+const BookingModel = mongoose.model('bookings', BookingSchema);
 
 module.exports = BookingModel;
